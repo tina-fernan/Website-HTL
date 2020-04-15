@@ -125,13 +125,34 @@ header a:hover{
 }
 /* sidebar */
 aside#sidebar{
-    float: right;
+    float: left;
     width: 30%;
-    margin-top: 20px;
+    padding: 3px;
+    
+    
+    
 
 
 }
-aside#sidebar .quote input, aside #sidebar .quote textarea{
+/*aside#sidebar .quote input, aside #sidebar .quote textarea{
     width: 90%;
     padding: 5px;
+}*/
+.shape  {
+    padding-bottom: 5px;
+
+    padding:5px ;
+    background:#35424a;
+    color: #ffffff;
+    
+       
+}
+legend{
+    
+    color: #e8491d;
+}
+.grab{
+    float: left;
+    width: 100%;
+    
 }

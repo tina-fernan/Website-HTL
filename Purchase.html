@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Bonito flowers | About</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Bonito</span> Flowers</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li class="current"><a href="Purchase.html">Purchase(Kapital1-3)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <section class="newsletter">
+        <div class="container">
+            <h1>subscribe to our newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter email" >
+                <button type="submit" class="button_1">subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section id="main">
+       <form class="grab">
+           
+           <fieldset class="shape">
+              
+               <dl>
+                <legend>Flowers</legend>
+                   <dt>Types of Flowers</dt>
+                   <dd>
+               <ul>
+                   <li>
+                       <label for="article_1">Rose</label>
+                       <input id="article_1" name="article_1" type="number" value="0">
+                   </li>
+                   <li>
+                       <label for="article_2">Tulip</label>
+                       <input id="article_2" name="article_2" type="number" value="0">
+                   </li>
+               </ul>
+            </dd>
+            </dl>
+           </fieldset>
+           <fieldset class="shape">
+               <dl>
+               <legend>Payment</legend>
+               <p>
+                   <label for="payment">type of Payment</label>
+                   <select name="payment" id="payment">
+                   <option value="ae">American Express Card</option>
+                   <option value="master">Master Card</option>
+                   <option value="visa">Visa</option>
+                </select>
+               </p>
+               <p>
+                <input id="email-receipt" name="email-receipt" type="checkbox">
+                <label for="email-receipt">Recipt per E-Mail</label>
+                <label for="email">to the following Adress</label>
+                <input id="email" name="email" type="email"> 
+               </p>
+            </dl>
+           </fieldset>
+           <fieldset class="shape">
+               
+               <dl>
+                <legend>Dispatch</legend>
+                   <dt>Delivery Address</dt>
+                   <dd>
+                       <ul>
+                           <li>
+                               <label for="reciepent_name">Name</label>
+                               <input name="reciepent_name" id="reciepent_name">
+                           </li>
+                           <li>
+                               <label for="recipient-address">Address</label>
+                               <input id="recipient-address" name="recipient-address">
+                           </li>
+                           <li> 
+                               <label  for = "recipient-zip"> ZIP </label > 
+                               <input  id = "recipient-zip"  name = "recipient-zip" > 
+                               <label  for = "recipient-city" > location </label > 
+                               <input  id = "recipient-city"  name = "recipient-city" > 
+                           </li>
+                       </ul>
+                   </dd>
+                   <dt> billing address </dt> 
+                       <dd > 
+                           <ul> 
+                            
+                             <li > 
+                             <label  for = "buyer-name" > Name </label > 
+                             <input  id = "buyer-name"  name = "buyer-name" > 
+                             </li > 
+                              <li > 
+                            <label  for = "buyer- address " > address </label > 
+                            <input  id = "buyer-address "  name = " buyer-address " >
+                        
+                          </li > 
+                            <li > 
+                         <label  for = "buyer-zip" > ZIP </label > 
+                         <input  id = "buyer-zip"  name = "buyer-zip" > 
+                         <label  for = "buyer-city" > location </label > 
+                          <input  id = "buyer-city"  name = "buyer-city" > 
+                  </li > 
+              </ul > 
+             </dd >
+    
+               </dl>
+           </fieldset>
+        
+       </form> 
+            
+    
+    <aside id="sidebar">
+        <div class="dark">
+            <h3>Message</h3>
+            <div class="quote1">
+            <form class="quot">
+                <div>
+                    <label>Name</label><br>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <label>Email</label><br>
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div>
+                    <label>Message</label><br>
+                    <textarea  placeholder="Message"></textarea>
+                </div>
+                <button class="button_1" type="submit">Send</button>
+                <button class="button_1">reset</button>
+       
+       
+    </form>
+</div>
+</div>
+    </aside>
+</section>
+
+</body>
+<script src="main.js"></script>
+</html>
