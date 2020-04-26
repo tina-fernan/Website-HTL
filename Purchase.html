@@ -19,7 +19,7 @@
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="Products.html">Products</a></li>
-                    <li class="current"><a href="Purchase.html">Purchase(Kapital1-3)</a></li>
+                    <li class="current"><a href="Purchase.html">Purchase</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,12 +32,20 @@
                 <input type="email" placeholder="Enter email" >
                 <button type="submit" class="button_1">subscribe</button>
             </form>
+            
         </div>
     </section>
     <section id="main">
+        
        <form class="grab">
            
            <fieldset class="shape">
+            <form>
+                <input type="text" name="uid" placeholder="Username">
+                <input id="loginPwdChange" type="password" type="pwd" placeholder="Password">
+                <button type="button" onclick="changePwdView()">show/hide</button>
+                <button type="submit" name="submit">login</button>
+            </form>
               
                <dl>
                 <legend>Flowers</legend>
@@ -133,7 +141,7 @@
             <form class="quot">
                 <div>
                     <label>Name</label><br>
-                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Name" required>
                 </div>
                 <div>
                     <label>Email</label><br>
@@ -148,9 +156,11 @@
        
        
     </form>
+   
 </div>
 </div>
     </aside>
+    
 </section>
 
 </body>
