@@ -1,0 +1,163 @@
+/* Vorlage für Dropdown Menü*/
+body
+{ font-family:Arial, Helvetica, sans-serif;
+}
+/* Styles für Links (a) 
+    das sind die Einträge im Submenü
+*/
+a:link { color:#ff0000; text-decoration:bold; font-family:Arial, sans-serif;}
+a:visited {color:#ff0000; text-decoration:none; font-family:Arial,sans-serif;}
+a:hover {
+    color: #0000ff;
+}
+
+/* ENavi Menü
+    ***************************************************************************
+*/
+h1{
+    text-align: center;
+   color: #e8491d;
+    border-bottom:#e8491d 3px solid ;
+    padding-bottom: 50px;
+
+}
+.intro{
+    background:rgb(104, 192, 226) repeat scroll 0 0 !important;
+    font-style: oblique;
+    color:white;
+    padding-top: 10px;
+    min-height: 70px;
+    text-align: left;
+    width: 100%;
+    
+
+}
+#ENavi  {
+    position: absolute;
+    top: 90px;
+    width:90%;
+    height:40px;
+    text-align:center;
+    
+}
+
+#ENavi ul {
+list-style:none;
+margin: 0px;
+padding: 0px;
+text-align:center;
+
+
+}
+/* id für Menüeinträge: hier 4 (id1 bis id4) daher 25%; Anzahl kann verändert werden
+    in dem Fall: width und left % Angaben anpassen! 100% ist gesamte Fensterbreite.
+*/
+#id1 {
+    position: absolute;
+    width:25%;
+}
+
+#id2 {
+    position: absolute;
+    width:25%;
+    left:25%;
+    
+}
+
+#id3 {
+    position: absolute;
+    width:25%;
+    left:50%;
+}
+#id4 {
+    position: absolute;
+    width:25%;
+    left:75%;
+}
+/* Menüleiste */
+#ENavi span {
+    color: #ffffff; /*Frabe der Schrift Hauptmenü*/
+    background:#0074ff; /* Farbe HG*/
+    padding-top: 4px;
+    padding-bottom:4px;
+    border-width: 5px; /*Rahmenlinien stärke*/
+    border-style:solid; /*durchgehende Rahmenlinie*/
+    border-radius:10px; /* abgerundete Rahmen*/
+    border-color:#ccc #888 #555 #bbb; /* Farbe Rahmenlinien top bottom right left*/
+    margin:2px; /* Abstand zwischen Menübuttons*/
+    cursor:pointer; /*Cursor-Type bei hover*/
+    display:block;/* Darstellung als Blockelemente*/
+
+}
+
+/*pull-down-menü
+    Style für heruntergeklappte Elemente; Details siehe wie oben bei #ENavi
+*/
+#ENavi .subM {
+    font-weight:normal;
+    text-align:center;
+    font-size:90%;
+    padding-top:4px;
+    padding-bottom:4px;
+    height:20px;
+    width:100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#ccc #888 #555 #bbb;
+}
+
+#ENavi li {
+    height:28px;  /*Breite einzelner Menüpunkte damit nachfolgender Text nicht überdeckt wird*/
+    width:25%;
+    z-index:1;
+}
+/*     hover   
+    Style für Änderungen bei "Maus-über Element" -Ereignis
+*/
+#ENavi div:hover {
+    height: 28px;
+    cursor: pointer;
+}
+
+#ENavi span:hover {
+    color: #ffff00;
+}
+/* sichtbar/unsichtbar  schalten -------------------------- */ 
+#ENavi ul ul, 
+#ENavi ul li:hover ul ul, 
+#ENavi ul ul li:hover ul ul {
+    display: none;
+}
+    #ENavi ul li:hover ul, 
+    #ENavi ul ul li:hover ul, 
+    #ENavi ul ul ul li:hover ul {
+        display: block;
+        background-color:aquamarine; 
+        /* Hintergrund für Menü */
+    }
+
+    #ENavi ul ul ul {
+        position: relative;
+        right: 100%;
+        top: -28px;
+        margin: 0px;
+    }
+/* Position von Block unter Menü, hier im body angewendet   --------------------------------- */
+
+#iblock {
+    position: fixed;
+    margin-top: 2em; /* Abstand vom oberen Fensterrand */
+    background-color: rgb(104, 192, 226);
+    z-index: 0; /* damit Menü den nachfolgenden Text überdeckt */
+    width: 100%; /*etwas Abstand vom Fensterrand links und rechts*/
+    left:0;
+    bottom: 0;
+} 
+
+
+
+
+
+
+
+

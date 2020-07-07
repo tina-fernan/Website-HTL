@@ -1,0 +1,164 @@
+
+.grab{
+	
+    float: right;
+    padding-top: 5px;
+	width: 600px;
+	height: 400px;
+
+	background: url("quiz2.jpg") no-repeat scroll 0 0 !important;
+}	
+	
+
+h1 {
+	background: orangered none repeat scroll 0 0 !important;
+	font-style: oblique;
+	color:white;
+	padding-top: 30px;
+	min-height: 70px;
+	text-align: center;	
+    
+}
+
+#intro{
+	
+	background-color: orange;
+	font: 18px/1.5 Arial,Helvetica,sans-serif;
+    width: 30%;
+	padding: 10px;
+	font-style: initial;
+	
+}
+.name{
+	display: none;
+}
+#intro:hover + .name{
+	display: inline;
+	color:rgb(10, 10, 41);
+	font: 18px/1.5 Arial,Helvetica,sans-serif;
+	
+	
+
+}
+footer{
+	margin-top: 1em;
+	position: fixed;
+	left:0 ;
+	bottom: 0;
+	width: 100%;
+    background-color: orangered;
+	color: floralwhite;
+	text-align: center;
+	font-size: 0.85em;
+	
+	
+}
+
+#quiz ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#quiz li {
+	margin: 0;
+	padding: 0;
+}
+
+#quiz label {
+	display: block;
+	background-color:#fffbf0;
+	border: 2px solid #35424a;
+	border-radius: 0.2em;
+	margin: 0.1em 0;
+	padding: 1em 2em;
+	text-align: start;
+	max-width: 33em;
+}
+
+#quiz label:hover {
+	background-color: orange;
+}
+
+#quiz input:checked ~ label,
+#quiz input:focus ~ label {
+	background-color: #dfac20;
+	border-color: #866a00;
+}
+
+#quiz input {
+	left: -9999px;
+	position: absolute;
+}
+ 
+#quiz button:not(.startBtn) {
+	height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.startBtn{
+	height: 40px;
+    background: orange;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+	color: #ffffff;
+	margin-bottom: 4em;
+	
+
+	
+}
+.startBtn:hover{
+	background-color: #e8491d;
+	padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+#quiz button,
+#quiz label {
+	cursor: pointer;
+	
+
+}
+/* listing with solutions */
+
+.question {
+	font-weight: bold;
+}
+
+.correct {
+	color: #0c0;
+}
+
+.wrong {
+	color: #c00;
+}
+
+.correct:before {
+	content: '✓';
+	color: #0d0;
+}
+
+.wrong:before {
+	content: '✗';
+	color: #f00;
+}
+
+.correct:before,
+.wrong:before {
+	font: 2em bold;
+	padding: 0 0.2em;
+}
+
+#scores,
+#scores td,
+#scores th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
